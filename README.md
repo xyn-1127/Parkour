@@ -1,67 +1,44 @@
-# VR-locomotion-parkour
+# VR Locomotion Parkour
 
-## Demo Video
+This repository contains my IGD301 locomotion implementation in the provided parkour scene.
+The core  logic is implemented in `Assets/Scripts/LocomotionTechnique.cs`.
 
-2022 with Object Interaction Task
+## Demo
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=ZVDoHTefdR0
-" target="_blank"><img src="http://img.youtube.com/vi/ZVDoHTefdR0/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+- blog post: `https://xyn-1127.github.io/igd301-blog/posts/lecture-hw4/index.md`
+- Video preview: `https://drive.google.com/file/d/1TcRcY6BeV1PBgIJC_9VAtvQiqFyYXvIN/preview`
 
+## Implemented Locomotion Features
 
-2021 Version
+- Hold-to-engage gate using index trigger (`triggerHoldThreshold = 0.95`)
+- Power-based arm-swing locomotion from controller motion
+- Head-forward direction control (HMD yaw on horizontal plane)
+- Rigidbody-based movement with acceleration/deceleration and speed clamp
+- Button jump (`A`) with cooldown
+- Respawn to current checkpoint (`B` or `Y`)
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=5s-vTwTFc7U
-" target="_blank"><img src="http://img.youtube.com/vi/5s-vTwTFc7U/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+## Controls (Quest)
 
-## How to Start
+- Hold `Left/Right Index Trigger`: engage locomotion
+- Swing both arms: move forward (faster swing -> higher speed)
+- Turn head/body: change movement direction
+- Press `A`: jump
+- Press `B` or `Y`: respawn to current checkpoint
 
-```{bash}
-git clone https://github.com/wenjietseng/VR-locomotion-parkour.git
-```
+## Scenes and Scripts
 
-- download the GitHub repo and open __VRParkour__ folder as a Unity project
-- implement your locomotion technique in `LocomotionTechnique.cs`
-- Selection...
-- play and see how fast and how many coins you can get!
+### Main scenes
 
-## Misc
+- `Assets/Scenes/ParkourChallenge.unity`
 
-### Core
+### Relevant scripts
 
-- Unity 6000.0.23f1 LTS
-- Meta XR All-in-One SDK 69.0.1
-- Oculus XR Plugin 4.3.0
+- `Assets/Scripts/LocomotionTechnique.cs`: locomotion, jump, respawn, trigger handling
 
-### Rendering settings
+## Requirements
 
-- [ref](https://developer.oculus.com/documentation/unity/unity-conf-settings/#rendering-settings)
-- Color space: Linear
-- OpenGL ES 3.0
-- Multithreaded Rendering
+- Unity `6000.0.60f1`
+- Meta XR All-in-One SDK (`com.meta.xr.sdk.all` `78.0.0`)
+- Oculus XR Plugin (`com.unity.xr.oculus` `4.5.2`)
+- Android build target (Quest)
 
-### Configuration settings
-
-- [ref](https://developer.oculus.com/documentation/unity/unity-conf-settings/#configuration-settings)
-- Scripting backend: IL2CPP
-- Target architectures: ARM64
-
-### Cybersickness reduction
-
-- [Ginger VR](https://github.com/angsamuel/GingerVR) Note: This repo seems not being maintained anymore. Still, it can be a reference for implementing your cybersickness reduction technique.
-
-### Scene
-
-- [Low Poly Ultimate Pack](https://assetstore.unity.com/packages/3d/props/low-poly-ultimate-pack-54733)
-- [Forest - Low Poly Toon Battle Arena / Tower Defense Pack](https://assetstore.unity.com/packages/3d/environments/forest-low-poly-toon-battle-arena-tower-defense-pack-100080)
-
-### Sound effect and music
-
-- Winner Winner Funky Chicken Dinner (YouTube Audio Library)
-- [tone beep](https://freesound.org/people/pan14/sounds/263133/)
-- [crowd yay](https://freesound.org/people/mlteenie/sounds/169233/)
-
-## License
-
-MIT
