@@ -5,8 +5,8 @@ The core  logic is implemented in `Assets/Scripts/LocomotionTechnique.cs`.
 
 ## Demo
 
-- blog post: `https://xyn-1127.github.io/igd301-blog/posts/lecture-hw4/index.md`
-- Video preview: `https://drive.google.com/file/d/1TcRcY6BeV1PBgIJC_9VAtvQiqFyYXvIN/preview`
+- blog post: https://xyn-1127.github.io/igd301-blog/posts/lecture-hw4/index.md
+- Video preview: https://drive.google.com/file/d/1TcRcY6BeV1PBgIJC_9VAtvQiqFyYXvIN/preview
 
 ## Implemented Locomotion Features
 
