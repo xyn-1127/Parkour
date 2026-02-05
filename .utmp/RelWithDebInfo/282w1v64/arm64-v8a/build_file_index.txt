@@ -1,0 +1,2 @@
+C:\Users\Abdus\Desktop\YINA\ARVR\Parkour-main3\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\Abdus\Desktop\YINA\ARVR\Parkour-main3\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
